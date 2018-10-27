@@ -1,4 +1,4 @@
-package treinamento.tests;
+package mercury.tests;
 
 import org.easetech.easytest.annotation.DataLoader;
 import org.easetech.easytest.annotation.Param;
@@ -10,9 +10,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
+import mercury.pages.LoginPage;
+import mercury.pages.RegisterPage;
 import treinamento.config.SetUp;
-import treinamento.pages.LoginPage;
-import treinamento.pages.RegisterPage;
 
 @RunWith(DataDrivenTestRunner.class)
 @DataLoader(filePaths = "src/test/resources/massa-de-dados.xls")

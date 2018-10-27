@@ -1,4 +1,4 @@
-package treinamento.pages;
+package mercury.pages;
 
 import java.util.List;
 
@@ -63,14 +63,16 @@ public class RegisterPage {
 		return campoFirstName.isDisplayed();
 	}
 	
-	public void preencherContactInformation(String firstName, String lastName, String phone, String email) {
+	public void preencherContactInformation(String firstName, String lastName, String phone, 
+			String email) {
 		campoFirstName.sendKeys(firstName);
 		campoLastName.sendKeys(lastName);
 		campoPhone.sendKeys(phone);
 		campoEmail.sendKeys(email);
 	}
 	
-	public void preencherMailingInformation(String address, String address2, String city, String stateProvince, String postalCode, String country) {
+	public void preencherMailingInformation(String address, String address2, String city, 
+			String stateProvince, String postalCode, String country) {
 		campoAddress.sendKeys(address);
 		campoAddress2.sendKeys(address2);
 		campoCity.sendKeys(city);
@@ -79,7 +81,8 @@ public class RegisterPage {
 		new Select(comboBoxContry).selectByVisibleText(country);
 	}
 	
-	public void preencherUserInformation(String userName, String password, String confirmPassword ) {
+	public void preencherUserInformation(String userName, String password, 
+			String confirmPassword ) {
 		campoUserName.sendKeys(userName);
 		campoPassword.sendKeys(password);
 		campoConfirmPassword.sendKeys(confirmPassword);

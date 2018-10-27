@@ -1,4 +1,4 @@
-package treinamento.pages;
+package mercury.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

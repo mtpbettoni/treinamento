@@ -1,5 +1,7 @@
 package treinamento.config;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -36,6 +38,7 @@ public class SetUp {
 		
 		driver.get(url);
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); // Espera implicita
 		
 		return driver;
 	}

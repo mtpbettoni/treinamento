@@ -1,4 +1,4 @@
-package treinamento.tests;
+package mercury.tests;
 
 import org.junit.After;
 import org.junit.Assert;
@@ -6,9 +6,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 
+import mercury.pages.HomePage;
+import mercury.pages.LoginPage;
 import treinamento.config.SetUp;
-import treinamento.pages.HomePage;
-import treinamento.pages.LoginPage;
 
 
 public class TestLogin {
